@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        background-color: #ddd;
+        display:flex;
+        justify-content: center;
+        padding:10px;
+        gap:15px;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    border: 2px solid black;
+    padding:12px 30px;    
+    border-radius:5px;
+    font-size:20px;
+
+}
+.Canvas{
+      width : 80%;
+      margin: 0 auto;
+      text-align: center;
+}
+.button{
+    box-sizing: border-box;
+    border:2px solid black;
+    width:200px;
+    padding:20px;
+    margin-right:15px;
+    
+}
+#grey{
+    background-color: grey;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+</style>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="https://www.youtube.com">Youtube</a>
+    </nav>
+    <div class="Canvas">
+        <h1>Color Scheme Switcher</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="yellow"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="red"></span>
+        <h2>Try clicking on one of the colors above</h2>
+        <span>to change the background color of this page!</span>
+        
+    </div>
+    <script src="changer.js"></script>
+</body>
+</html>
